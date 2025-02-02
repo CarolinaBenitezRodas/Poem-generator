@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>IA Poem Gnerator</title>
+    <title>IA Poem Generator</title>
   </head>
   <body>
     <header>
-      <h1>Poem Generator✨</h1>
+      <h1>IA Poem Generator ✨</h1>
     </header>
 
     <main>
@@ -20,11 +21,15 @@
           autofocus
           required
           autocomplete="off"
+          class="instructions"
+          id="user_instructions"
         />
-        <input type="submit" />
+        <input type="submit" value="Generate Poem" />
       </form>
+
       <div class="poem" id="poem"></div>
     </main>
+
     <footer>
       <p>
         This project was coded by
@@ -44,6 +49,7 @@
         >
       </p>
     </footer>
+
     <script src="src/index.js"></script>
   </body>
 </html>
