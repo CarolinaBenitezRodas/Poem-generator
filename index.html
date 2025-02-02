@@ -10,12 +10,14 @@
   </head>
   <body>
     <header>
+      <div class="container">
       <h1>IA Poem Generator ✨</h1>
     </header>
 
     <main>
+       <div class="form-container">
       <form id="poem_generator_form">
-        <input
+          <input
           type="text"
           placeholder="Enter the theme of the poem"
           autofocus
@@ -26,7 +28,8 @@
         />
         <input type="submit" value="Generate Poem" />
       </form>
-
+       <div class="hint">i.e: Flower, Love or Cheese</div>
+       </div>
       <div class="poem" id="poem"></div>
     </main>
 

@@ -1,89 +1,112 @@
-/* Global Styles */
+/* General Styling */
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f8f5f2; /* Bone white */
+  color: #5a4d4d; /* Soft brown for text */
   margin: 0;
   padding: 0;
-  background: #f9f6ee;
-  color: #4a4a4a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Header */
 header {
+  background-color: #e4cfcf; /* Nude shade */
+  padding: 20px;
   text-align: center;
-  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 3px solid #d1b6b6; /* Slight contrast */
 }
 
 h1 {
   font-size: 2rem;
-  color: #6d6875;
+  font-weight: 600;
+  margin: 0;
+  color: #4a3b3b;
 }
 
-/* Form */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background: #fae1dd;
+/* Form Styling */
+.form-container {
+  background: #fff;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
 }
 
 input[type="text"] {
-  width: 300px;
-  padding: 10px;
-  border: 1px solid #d3a7a0;
-  border-radius: 5px;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #d6baba;
+  border-radius: 8px;
   font-size: 1rem;
-  background: #f8edeb;
-  color: #4a4a4a;
+  margin-bottom: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #c5a3a3;
 }
 
 input[type="submit"] {
-  background: #b5838d;
-  color: white;
+  width: 100%;
+  background: #d6baba;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 12px;
+  color: white;
   font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 input[type="submit"]:hover {
-  background: #a66a79;
+  background: #c5a3a3;
 }
 
-/* Poem Display */
-div {
-  margin-top: 20px;
+/* Hint */
+.hint {
+  font-size: 0.9rem;
+  color: #8b7d7d;
+  margin-top: 10px;
+}
+
+/* Poem Styling */
+.poem {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  background: #fff;
   padding: 20px;
-  background: #fae1dd;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 1rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
   text-align: center;
-  width: 350px;
+  line-height: 1.8;
 }
 
 /* Footer */
 footer {
-  position: absolute;
-  bottom: 10px;
+  margin-top: 30px;
   font-size: 0.9rem;
   text-align: center;
+  color: #7a6565;
 }
 
 footer a {
-  color: #b5838d;
+  color: #5a4d4d;
   text-decoration: none;
+  font-weight: 600;
 }
 
 footer a:hover {
-  text-decoration: underline;
+  color: #8b7d7d;
 }
